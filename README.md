@@ -1,13 +1,13 @@
 YouFi Protocol - Hedera Hello Future: Origins Hackathon 2025
-Transform financial discipline into digital assets using Soulbound Tokens (SBTs)
+Transform financial discipline into digital assets using Soulbound Tokens (SBTs) on Hedera Hashgraph
 
-Hedera SBT Open Finance AI
+Hedera SBT Open Finance AI License Build Status
 
 Problem Statement
-140 million Brazilians struggle with financial discipline. Traditional banking doesn't reward consistent behavior or provide contextual guidance for personal financial goals.
+Over 140 million Brazilians lack financial discipline, with traditional banking systems offering no rewards for consistent behavior or contextual guidance for achieving personal financial goals. The disconnect between intention and action in financial planning costs individuals billions in unrealized dreams and economic potential.
 
 Solution
-YouFi Protocol is the first system that converts personal financial goals into Soulbound Tokens (SBTs), creating a verifiable on-chain reputation score. Every commitment fulfilled strengthens your score, unlocking exclusive DeFi products.
+YouFi Protocol is the world's first blockchain-based system that transforms personal financial goals into Soulbound Tokens (SBTs) on Hedera Hashgraph. By creating verifiable, non-transferable digital assets representing commitments, users build an immutable on-chain reputation score that unlocks exclusive DeFi opportunities, better interest rates, and community-driven financial support.
 
 Key Innovation: "Seu compromisso é seu patrimônio"
 ("Your commitment is your wealth")
@@ -24,19 +24,21 @@ Technical Architecture
 │                    HEDERA HASHGRAPH                         │
 │  HTS: SBT Tokens  │  HCS: Event Log  │  Smart Contracts    │
 └─────────────────────────────────────────────────────────────┘
-Features
-Core Functionality
-SBT Goal Creation - Convert personal goals into blockchain-verified tokens
-Real-time Bank Integration - Pluggy Open Finance webhooks
-AI Financial Analysis - Contextual spending insights
-Reputation System - On-chain credibility scoring
-Gamified Experience - Achievement-based progression
-Technical Highlights
-Sub-second transactions using Hedera Hashgraph
-Immutable commitment history via HCS (Hedera Consensus Service)
-Smart goal tracking with AI-powered recommendations
-Real-time transaction monitoring through Open Finance APIs
-Transparent reputation verifiable on-chain
+Core Features
+User Experience
+Goal Tokenization - Transform personal financial goals into unique SBTs with metadata and progress tracking
+Real-time Banking Integration - Seamless connection to Brazilian banks via Pluggy Open Finance API
+AI-Powered Insights - Contextual spending analysis and goal impact predictions in Portuguese
+Community Support System - Peer-to-peer goal backing with fractional SBT ownership
+Reputation Dashboard - Visual representation of on-chain financial discipline score
+Achievement System - Unlock badges, levels, and DeFi opportunities through consistent behavior
+Technical Capabilities
+Sub-second Finality - Hedera Hashgraph consensus for instant transaction confirmation
+Immutable Progress Log - HCS (Hedera Consensus Service) for tamper-proof commitment history
+Smart Contract Automation - Solidity-based business logic for goal management and reputation calculation
+Real-time Event Processing - WebSocket integration for instant goal impact notifications
+Multi-chain Compatibility - Future expansion to Ethereum, Polygon, and other networks
+Enterprise Security - End-to-end encryption, LGPD compliance, and secure key management
 Technology Stack
 Blockchain Layer
 Hedera Hashgraph - Main blockchain infrastructure
@@ -55,18 +57,34 @@ Real-time Updates - WebSocket/SSE integration
 Database & Storage
 MongoDB/PostgreSQL - User data persistence
 IPFS - Decentralized metadata storage
-Demo Flow
-Create Goal → User sets "Trip to Japan - R$ 12,000"
-Mint SBT → Commitment recorded on Hedera blockchain
-Connect Bank → Pluggy Open Finance integration
-Real-time Analysis → AI monitors every transaction
-Instant Feedback → "Food delivery delays your goal by 2.4 days"
-Reputation Update → Score reflects discipline level
-Unlock DeFi → High reputation = better financial products
-Market Impact
-Target: 140M Brazilians without financial discipline
-Opportunity: $847B Brazilian personal finance market
-USP: First protocol converting commitment into verifiable assets
+How It Works
+User Journey
+Goal Creation → User defines "Trip to Japan - R$ 12,000" with target date
+SBT Minting → Commitment permanently recorded on Hedera blockchain with unique token ID
+Bank Connection → Secure Open Finance integration via Pluggy API
+Real-time Monitoring → AI analyzes every transaction against goal progress
+Instant Insights → "This R$ 42.90 iFood order delays your Japan trip by 2.4 days"
+Community Support → Friends can back your goal with fractional SBT ownership
+Reputation Growth → Consistent behavior increases on-chain credibility score
+DeFi Opportunities → High reputation unlocks better rates and exclusive products
+Technical Flow
+User Input → Frontend → Backend API → AI Analysis → Hedera Blockchain → Database → Real-time Updates
+     ↓              ↓           ↓            ↓              ↓              ↓              ↓
+Goal Created → UI Validation → Business Logic → Impact Calculation → SBT Minting → Data Storage → WebSocket Notification
+Market Opportunity
+Market Size & Addressable Market
+Total Addressable Market (TAM): $150B+ (Global DeFi + Cross-border payments)
+Serviceable Addressable Market (SAM): $12B (Brazilian Fintech market)
+Serviceable Obtainable Market (SOM): $25M ARR by Year 3 (Conservative projection)
+Target Demographics
+Primary: 140M+ Brazilians struggling with financial discipline
+Secondary: 25M+ crypto-curious users across Latin America
+Tertiary: Global DeFi users seeking reputation-based products
+Competitive Advantage
+First-Mover Advantage: World's first SBT-based financial commitment protocol
+Real Integration: Actual banking connections via certified Open Finance APIs
+Localized AI: Portuguese-language insights tailored to Brazilian financial behavior
+Network Effects: Community-driven growth through mutual goal support
 Competitive Advantages
 First Mover - Pioneer in financial discipline SBTs
 Real Integration - Actual bank connections via Open Finance
@@ -79,20 +97,34 @@ Node.js 18+
 npm/yarn
 Git
 Docker (optional)
-Installation
-# 1. Clone repository
-git clone https://github.com/yourusername/youfi-hedera-hackathon-2025.git
+Quick Start
+# 1. Clone the repository
+git clone https://github.com/DGuedz/youfi-hedera-hackathon-2025.git
 cd youfi-hedera-hackathon-2025
 
-# 2. Install dependencies
-npm install
+# 2. Run automated setup
+npm run setup
 
-# 3. Environment setup
+# 3. Configure environment variables
 cp .env.example .env
-# Edit .env with your Hedera credentials
+# Add your Hedera testnet credentials
 
-# 4. Start development server
+# 4. Start development servers
 npm run dev
+# Backend: http://localhost:3001
+# Frontend: http://localhost:3000
+
+# 5. Run tests
+npm test
+
+# 6. Build for production
+npm run build
+Docker Setup (Recommended)
+# Start all services with Docker Compose
+docker-compose up -d
+
+# Or use our setup script
+./scripts/setup.sh
 Environment Variables
 # Hedera Configuration
 MY_ACCOUNT_ID=0.0.xxxxx
@@ -140,12 +172,23 @@ Yield farming for consistent users
 Insurance products
 Cross-chain expansion
 Team
-Built for Hedera Hello Future: Origins Hackathon 2025
+Built by BlackMindz Co. for Hedera Hello Future: Origins Hackathon 2025
 
-Technical Lead - Blockchain & Backend Architecture
-Frontend Developer - React & UX Implementation
-AI Engineer - Analysis & Recommendation Engine
-Product Manager - Strategy & Vision
+Core Team
+DGuedz - Technical Lead & Blockchain Architect
+
+Hedera SDK Integration & Smart Contract Development
+Backend API Design & Database Architecture
+GitHub: @DGuedz
+Technical Expertise
+Blockchain Development - Hedera Hashgraph, HTS, HCS, Smart Contracts 2.0
+Full-Stack Engineering - Node.js, React 18, MongoDB, TypeScript
+AI Integration - OpenAI API, Natural Language Processing, Financial Analysis
+Fintech Compliance - Open Finance, LGPD, Banking APIs, Security
+Advisory & Mentorship
+Hedera Developer Relations - Technical guidance and ecosystem support
+Pluggy Partnership - Open Finance integration and compliance
+DeFi Protocol Advisors - Yield optimization and tokenomics design
 License
 MIT License - see LICENSE file
 
@@ -162,13 +205,16 @@ Built with commitment for Hedera Hello Future: Origins Hackathon 2025
 "Seu compromisso é seu patrimônio - Your commitment is your wealth"
 
 Hackathon Submission Details
-Hackathon: Hedera Hello Future: Origins Hackathon 2025
+Event: Hedera Hello Future: Origins Hackathon 2025
 Track: DeFi / Tokenization
-Submission Date: August 8, 2025
-Team: YouFi Protocol Team (BlackMindz Co.)
-Demo: youfi-demo.vercel.app
-Video: YouTube Demo
-GitHub: github.com/DGuedz/youfi-hedera-hackathon-2025
+Submission Date: August 8, 2025, 23:59 UTC
+Team: YouFi Protocol (BlackMindz Co.)
+Lead Developer: @DGuedz
+Live Demo: youfi-protocol.vercel.app
+Demo Video: YouTube Pitch (4 min)
+Repository: github.com/DGuedz/youfi-hedera-hackathon-2025
+Pitch Deck: View PDF
+Technical Documentation: Architecture Guide
 Submission Requirements Checklist
 Main Track Requirements (DeFi/Tokenization)
 
